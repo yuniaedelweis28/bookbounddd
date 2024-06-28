@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #f1f1f1;
+  padding: 0;
+  margin: 0;
+}
+
+.header {
+  background-color: #4CAF50;
+  color: white;
+  text-align: center;
+  padding: 10px 0;
+  margin: 0;
+}
+
+.header a {
+  color: white;
+  text-align: center;
+  padding: 10px 15px;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+.header a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.container {
+  display: flex;
+}
+
+.sidebar {
+  background-color: #ffffff;
+  color: #000000;
+  height: auto;
+  width: 200px;
+  padding: 10px;
+  margin: 10px;
+  float: left;
+}
+
+.sidebar h2 {
+  margin-top: 0;
+  font-size: 1.2em;
+  font-weight: bold;
+}
+
+.sidebar ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.sidebar li {
+  margin-bottom: 5px;
+}
+
+.sidebar li a {
+  color: #000000;
+  text-decoration: none;
+}
+
+.sidebar li a:hover {
+  text-decoration: underline;
+}
+
+.content {
+  background-color: #ffffff;
+  color: #000000;
+  height: auto;
+  width: 600px;
+  padding: 10px;
+  margin: 10px;
+  float: left;
+}
+
+.search-bar {
+  margin-bottom: 10px;
+}
+
+.search-bar input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.search-bar button {
+  padding: 10px 20px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.book-item {
+  border: 1px solid #ccc;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+}
+
+.book-title {
+  font-size: 1.2em;
+  font-weight: bold;
+}
+
+.book-author {
+  margin-bottom: 5px;
+}
+
+.book-rating {
+  display: flex;
+  align-items: center;
+}
+
+.book-rating i {
+  color: gold;
+}
+
+.book-rating i.empty {
+  color: #ccc;
+}
+
+.footer {
+  background-color: #f1f1f1;
+  color: #000000;
+  text-align: center;
+  padding: 10px 0;
+  margin-top: 10px;
+  clear: both;
+}
+
+</style>
+</head>
+<body>
+
+<div class="header">
+  <h1>BookSearch</h1>
+  <a href="#">Home</a> | 
+  <a href="#">Profile</a> |
+  <a href="#">Logout</a>
+</div>
+
+<div class="container">
+  <div class="sidebar">
+    <h2>Genres</h2>
+    <ul>
+      <li><a href="#">Fiction</a></li>
+      <li><a href="#">Non-Fiction</a></li>
+      <li><a href="#">Fantasy</a></li>
+      <li><a href="#">Mystery</a></li>
+      <li><a href="#">Romance</a></li>
+      <li><a href="#">Sci-Fi</a></li>
+    </ul>
+  </div>
+
+  <div class="content">
+    <div class="search-bar">
+      <input type="text" placeholder="Search for a book...">
+      <button>Search</button>
+    </div>
+
+    <div class="book-item">
+      <h2 class="book-title">Book Title 1</h2>
+      <p class="book-author">Author: Author 1</p>
+      <div class="book-rating">
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star-half-alt"></i>
+      </div>
+    </div>
+
+    <div class="book-item">
+      <h2 class="book-title">Book Title 2</h2>
+      <p class="book-author">Author: Author 2</p>
+      <div class="book-rating">
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star-half-alt"></i>
+        <i class="far fa-star"></i>
+      </div>
+    </div>
+
+    <div class="book-item">
+      <h2 class="book-title">Book Title 3</h2>
+      <p class="book-author">Author: Author 3</p>
+      <div class="book-rating">
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="footer">
+  <p>Copyright &copy; 2023 BookSearch</p>
+</div>
+
+</body>
+</html>
